@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: solms
+
+server:
+  port: 8080
+
+solms :
+  host: tcps://mr-dacxxiat4dw.messaging.solace.cloud:55443
+  vpn: kushdev-solace
+  username: solace-cloud-client
+  password: qscmcf12canvbe569p3j3cu612
