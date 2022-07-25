@@ -9,4 +9,4 @@ solms :
   host: tcps://mr-dacxxiat4dw.messaging.solace.cloud:55443
   vpn: kushdev-solace
   username: solace-cloud-client
-  password: qscmcf12canvbe569p3j3cu612
+  password: ENC(2uML3tSgLPclRaH0TSUqbNzzafqgazQ55CxEO6+rz7lOXYWbHXrOCSos89/ZczwCPSpM9JgbjianoJJl0tguGg==)
