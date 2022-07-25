@@ -52,7 +52,7 @@ public class PublisherService {
     }
 
     public void publishToTopic(Topic topic, XMLMessageProducer messageProducer, List<Messages> messagesObjList) {
-        messagesObjList.stream().forEach(
+        messagesObjList.stream().parallel().forEach(
                 (eachMessage -> {
                     LOGGER.info("Thread {}: Publishing:{}", Thread.currentThread().getName(), eachMessage.getDistributionId());
                     TextMessage msg = JCSMPFactory.onlyInstance().createMessage(TextMessage.class);
