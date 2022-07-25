@@ -1,0 +1,2 @@
+# solmc
+Solace Messaging Service
