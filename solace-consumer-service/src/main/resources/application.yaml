@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: solms-consumer-service
+
+server:
+  port: 9002
+
+solms :
+  host: tcps://mr-dacxxiat4dw.messaging.solace.cloud:55443
+  vpn: kushdev-solace
+  username: solace-cloud-client
+  password: ENC(jgev4cfQxU8Fp7sSc0wR85XBZG/eGjlOcy6D8V3CV1KureaHxYfNdnj+fJQ1u5uVu8t+m7heMu+dX2bkT4SfJw==)
+
+jasypt:
+  encryptor:
+    password: ${ENCRYPTION_MASTER_PASSWORD}
+    algorithm: PBEWITHHMACSHA512ANDAES_256
+---
+spring:
+  datasource:
+    url: jdbc:sqlserver://bosbizon.database.windows.net:1433;database=SmartInvestments;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: bosbizonAdmin@bosbizon
+    password: ENC(7kdWnYvZkpu0rfMPczGj4c9zEYzP8gl5OFeN48u0X64LyGt7PBVDmXecS5AInVr9nd/XJaoAyDS9uQlde/YUdQ==)
